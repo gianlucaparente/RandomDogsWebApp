@@ -1,0 +1,18 @@
+{
+  "name": "random-dogs-web-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A web application for show random images of dogs selected by breed.",
+  "repository": "https://github.com/angular/angular-phonecat",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "1.5.11",
+    "angular-resource": "1.5.11",
+    "angular-route": "1.5.11",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./ -a localhost -p 8000 -c-1"
+  }
+}
