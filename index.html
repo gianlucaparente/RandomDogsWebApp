@@ -1,29 +1,23 @@
 <!doctype html>
 <html lang="en" ng-app="RandomDogsWebApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Random Dogs Web App</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Random Dogs Web App</title>
 
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
-    <script src="node_modules/angular-route/angular-route.min.js"></script>
-    <script src="src/components/breed/breed.js"></script>
-    <script src="src/app.js"></script>
+        <link rel="stylesheet" href="src/css/style.css" type="text/css" media="all" />
 
-  </head>
-  <body>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+        <script src="node_modules/angular-route/angular-route.min.js"></script>
+        <script src="src/js/components/breed/breed.module.js"></script>
+        <script src="src/js/components/breed/breed.service.js"></script>
+        <script src="src/js/components/breed/breed.component.js"></script>
+        <script src="src/app.js"></script>
 
-    <header>
-      <h1>Welcome to Random Dogs Web App!</h1>
-    </header>
-    
-    <div>
-      <div ng-view></div>
-    </div>
+    </head>
+    <body>
 
-    <footer>
-      <p>Powered by Gianluca Parente</p>
-    </footer>
-    
-  </body>
+        <div ng-include="'src/dashboard.html'"></div>
+
+    </body>
 </html>

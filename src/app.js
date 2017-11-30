@@ -3,10 +3,10 @@
 // Define the `RandomDogsWebApp` module
 let RandomDogsWebApp = angular.module('RandomDogsWebApp', ['ngRoute', 'BreedModule']);
 
-RandomDogsWebApp.config(['$routeProvider', ($routeProvider) => {
-  $routeProvider.
-    when('/dashboard', {
-      templateUrl: 'src/partials/dashboard'
-    }).
-    otherwise('/dashboard');
-}]);
+// RandomDogsWebApp.config(['$routeProvider', ($routeProvider) => {
+//   $routeProvider.
+//     when('/dashboard', {
+//       templateUrl: 'src/dashboard'
+//     }).
+//     otherwise('/dashboard');
+// }]);
