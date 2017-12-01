@@ -119,14 +119,8 @@ textarea {
 	padding-top:10px;
 }
 .gallery-head .category .dd-holder .dd ul li {
+	cursor: pointer;
 	display:block;
-}
-.gallery-head .category .dd-holder .dd ul li a {
-	display:block;
-	background:none;
-	height:15px;
-	font-size:13px;
-	text-transform:none;
 }
 .gallery-head .category .dd-holder .dd ul li a:hover {
 	color:#d1ab55;
@@ -221,28 +215,13 @@ textarea {
 	margin:6px 0 0 6px;
 	z-index:1;
 }
-.gallery-content ul li .image-hover {
+.gallery-content ul li img {
 	position:absolute;
 	top:6px;
 	left:6px;
-	width:106px;
+	width:110px;
 	height:111px;
-	display:none;
 	z-index:2;
-	background:url(images/hover.png) repeat 0 0;
-	line-height:15px;
-	padding-left:5px;
-}
-.gallery-content ul li .image-hover h5 {
-	font-size:11px;
-	font-weight:normal;
-	color:#fff;
-}
-.gallery-content ul li .image-hover h6 {
-	font-size:10px;
-	font-weight:normal;
-	color:#d1ab55;
-	margin-top:45px;
 }
 .gallery-content ul li .image-hover a {
 	font-size:10px;
@@ -255,13 +234,6 @@ textarea {
 	color:#fff;
 }
 
-a img {
-	border:0;
-	position: absolute;
-	top: 0;
-	width: 122px;
-}
-
 .breed-name{
 	margin: 20px 0;
 	text-align: center;
@@ -272,4 +244,13 @@ a img {
 .sub-breeds{
 	margin: 20px 0;
 	text-align: center;
+}
+
+.fade-in-out {
+	transition: 1s linear all;
+	opacity: 1;
+}
+
+.fade-in-out.ng-hide {
+	opacity: 0;
 }

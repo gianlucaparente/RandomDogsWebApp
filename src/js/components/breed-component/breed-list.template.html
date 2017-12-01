@@ -2,6 +2,7 @@
     <li ng-repeat="(breed, subBreeds) in BreedListController.breeds" ng-click="BreedListController.clickOnBreed(breed)">
         <div class="breed-name">{{breed}}</div>
         <div class="sub-breeds" ng-bind="BreedListController.getSubBreedsString(subBreeds)"></div>
-        <a><img ng-src="{{BreedListController.dogImageMap[breedName]}}" alt="" /></a>
+        <!-- <a><img ng-src="{{BreedListController.dogImageMap[breedName]}}" alt="" /></a> -->
+		<show-dog-image dog-image="BreedListController.dogImageMap[breed]" />
     </li>
 </ul>

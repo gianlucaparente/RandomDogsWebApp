@@ -61,7 +61,7 @@ class BreedListController {
 
 const BreedListComponent = {
     bindings: {},
-    templateUrl: './src/js/components/breed/breed-list.template.html',
+    templateUrl: './src/js/components/breed-component/breed-list.template.html',
     controllerAs: "BreedListController",
     controller: BreedListController
 };

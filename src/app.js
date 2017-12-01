@@ -1,12 +1,10 @@
 'use strict';
 
-// Define the `RandomDogsWebApp` module
-let RandomDogsWebApp = angular.module('RandomDogsWebApp', ['ngRoute', 'BreedModule']);
+angular.module('BreedModule', [
+    'ngResource',
+    'ngAnimate']);
 
-// RandomDogsWebApp.config(['$routeProvider', ($routeProvider) => {
-//   $routeProvider.
-//     when('/dashboard', {
-//       templateUrl: 'src/dashboard'
-//     }).
-//     otherwise('/dashboard');
-// }]);
+// Define the `RandomDogsWebApp` module
+angular.module('RandomDogsWebApp', [
+    'ngRoute', 
+    'BreedModule']);
