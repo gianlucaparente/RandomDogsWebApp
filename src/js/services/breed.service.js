@@ -15,6 +15,11 @@ class BreedService {
         return this.$resource('https://dog.ceo/api/breeds/list/all').get().$promise;
     }
 
+    /**
+     * Returns a random dog image from the breed.
+     * @param breedName
+     * @returns Promise associate to service invoked
+     */
     getRandomDogImageByBreed(breedName) {
         return this.$resource('https://dog.ceo/api/breed/' + breedName + '/images/random').get().$promise;
     }

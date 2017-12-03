@@ -95,35 +95,35 @@ breed-list ul {
 
 /* END BREED-LIST COMPONENT RULES */
 
-/* START SHOW-DOG-IMAGE COMPONENT RULES */
+/* START BREED-ITEM COMPONENT RULES */
 
-show-dog-image {
+breed-item {
 
 }
 
-	show-dog-image .container {
+	breed-item .container {
 		cursor: pointer;
 		width:122px;
 		height:122px;
 	}
 
-		show-dog-image .container .info-container {
+		breed-item .container .info-container {
 			padding-top: 20px;
 		}
 
-			show-dog-image .container .info-container .breed-name {
+			breed-item .container .info-container .breed-name {
 				margin-bottom: 14px;
 				text-align: center;
 				font-weight: bold;
 				text-transform: capitalize;
 			}
 
-			show-dog-image .container .info-container .sub-breeds {
+			breed-item .container .info-container .sub-breeds {
 				text-align: center;
 				margin: 3px 0;
 			}
 
-		show-dog-image .container .img-container {
+		breed-item .container .img-container {
 			width:110px;
 			height:110px;
 			position: absolute;
@@ -134,13 +134,13 @@ show-dog-image {
 			z-index: 3;
 		}
 
-			show-dog-image .container .img-container img {
+			breed-item .container .img-container img {
 				width:110px;
 				z-index:3;
 				vertical-align: middle;
 			}
 
-	show-dog-image .close-box {
+	breed-item .close-box {
 		position: absolute;
 		top: -5px;
 		right: -5px;
@@ -157,7 +157,7 @@ show-dog-image {
 		z-index: 1000;
 	}
 
-	show-dog-image .close-box:before {
+	breed-item .close-box:before {
 		content: "×";
 	}
 

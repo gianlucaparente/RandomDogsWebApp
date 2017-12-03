@@ -5,6 +5,10 @@ class BreedListController {
         this.getAllBreed();
     }
 
+    $onInit() {}
+
+    $onChanges(onChangesObj) {}
+    
     getAllBreed() {
         let self = this;
 
@@ -31,11 +35,14 @@ class BreedListController {
 
 const BreedListComponent = {
     bindings: {},
-    templateUrl: './src/js/components/breed-component/breed-list.template.html',
-    controllerAs: "BreedListController",
+    templateUrl: './src/js/components/breed-list-component/breed-list.template.html',
+    controllerAs: "BreedListCtrl",
     controller: BreedListController
 };
 
+/**
+ * Register angular component
+ */
 window.exports = {
     BreedListComponent: angular.module('BreedModule').component('breedList', BreedListComponent)
 };

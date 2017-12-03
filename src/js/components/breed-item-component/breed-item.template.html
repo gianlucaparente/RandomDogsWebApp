@@ -1,0 +1,10 @@
+<div class="container" ng-click="BreedItemCtrl.clickOnBreed(BreedItemCtrl.breed)">
+    <div class="info-container" ng-show="!BreedItemCtrl.dogImage">
+        <div class="breed-name">{{BreedItemCtrl.breed}}</div>
+        <div class="sub-breeds" ng-repeat="subBreed in BreedItemCtrl.subBreeds | limitTo:3">{{subBreed}}</div>
+    </div>
+    <div class="img-container fade-in-out" ng-show="BreedItemCtrl.dogImage">
+        <img ng-src="{{BreedItemCtrl.dogImage}}" />
+    </div>
+</div>
+<div class="close-box" ng-show="BreedItemCtrl.dogImage" ng-click="BreedItemCtrl.clickOnClose()"></div>
