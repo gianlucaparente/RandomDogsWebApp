@@ -9,7 +9,7 @@
     "angular": "1.5.11",
     "angular-resource": "1.5.11",
     "angular-route": "1.5.11",
-    "angular-animate": "1.6.7",
+    "angular-animate": "1.5.11",
     "http-server": "0.9.0"
   },
   "scripts": {

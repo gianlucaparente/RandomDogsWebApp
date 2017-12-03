@@ -23,36 +23,6 @@ class BreedListController {
             });
     }
     
-    getRandomDogImageByBreed(breedName) {
-        let self = this;
-
-        if (!self.dogImageMap) {
-            self.dogImageMap = {};
-        }
-
-        this.breedService.getRandomDogImageByBreed(breedName)
-            .then((response) => {
-
-                if (response.status === 'success') {
-                    self.dogImageMap[breedName] = response.message;
-                } else {
-                    console.log("Error");
-                }
-
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }
-
-    getSubBreedsString(subBreedList) {
-        return subBreedList.join();
-    }
-
-    clickOnBreed(breedName) {
-        this.getRandomDogImageByBreed(breedName);
-    }
-
     // injection here
     static get $inject() {
         return ['BreedService'];
