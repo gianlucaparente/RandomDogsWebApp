@@ -6,11 +6,16 @@
 class BreedItemController {
 
     /**
-     * initialize breed service for retrieve dog images.
+     * initialize breed service injected and subscribe to reset image event.
      * @param BreedService
      */
-    constructor(BreedService) {
+    constructor(BreedService, $rootScope) {
         this.breedService = BreedService;
+
+        $rootScope.$on('RESET-IMAGE', () => {
+            this.clickOnClose();
+        });
+
     }
 
     $onInit() {}
@@ -46,6 +51,7 @@ class BreedItemController {
      * @param breed
      */
     clickOnBreed(breed) {
+        console.log("Retrieve dog image");
         this.getRandomDogImageByBreed(breed);
     }
 
@@ -53,12 +59,13 @@ class BreedItemController {
      * Method trigger when click on a close box. Reset dog image to show info content. 
      */
     clickOnClose() {
+        console.log("Clear dog image");
         this.dogImage = undefined;
     }
 
     // injection here
     static get $inject() {
-        return ['BreedService'];
+        return ['BreedService', '$rootScope'];
     }
 }
 

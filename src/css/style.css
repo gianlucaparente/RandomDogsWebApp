@@ -20,10 +20,29 @@ a:hover {
 input, textarea, select {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
-	border:0;
+}
+input[type=text], select {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 textarea {
 	overflow:hidden;
+}
+input[type=button] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 13px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
 }
 /* END COMMON RULES*/
 
@@ -46,7 +65,7 @@ textarea {
 	}
 
 		.gallery-head {
-			margin: 60px 0px;
+			margin: 60px 0px 40px;
 		}
 
 			.gallery-head .title {
@@ -162,4 +181,13 @@ breed-item {
 	}
 
 
-/* END SHOW-DOG-IMAGE COMPONENT RULES */
+/* END BREED-ITEM COMPONENT RULES */
+
+/* START BREED-FILTERS COMPONENT RULES */
+breed-filters {
+	margin: 30px auto;
+	width: 600px;
+	text-align: center;
+	display: block;
+}
+/* END BREED-FILTERS COMPONENT RULES */

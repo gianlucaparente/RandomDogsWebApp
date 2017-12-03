@@ -1,5 +1,5 @@
 <ul>
-    <li ng-repeat="(breed, subBreeds) in BreedListCtrl.breeds">
-        <breed-item breed="breed" sub-breeds="subBreeds" />
+    <li ng-repeat="breed in BreedListCtrl.breeds | filter: BreedListCtrl.breedNameFilter track by breed">
+        <breed-item breed="breed" sub-breeds="BreedListCtrl.breedMap[breeds]" />
     </li>
 </ul>
