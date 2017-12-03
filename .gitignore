@@ -20,3 +20,5 @@
 
 # Mongo Explorer plugin:
 # .idea/mongoSettings.xml
+
+.node_modules/
